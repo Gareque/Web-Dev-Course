@@ -1,0 +1,49 @@
+function fibonacciGenerator (n) {
+        // start the basic array off
+        var fibArray = [0, 1, 1];
+    
+        // Create the fibonacci sequence
+        while (fibArray.length < 20) {
+        var fibPlus = fibArray[fibArray.length - 1];
+        var fibPlusX = fibArray[fibArray.length - 2];
+            fibArray.push(fibPlus + fibPlusX);
+        }
+        
+        // Select the part we need
+        let arrayNeed = n
+        let targetArray = fibArray[arrayNeed]
+        
+        // Print the section listed in the call
+        console.log(targetArray);
+    }
+    
+    fibonacciGenerator(10)
+
+
+// How it was done in the course:
+function fibonacciGenerator (n) {
+    //Do NOT change any of the code above 👆
+        
+        //Write your code here:
+        var output = [];
+    
+        if (n === 1) {
+            output = [0];
+        }
+    
+        else if (n === 2) {
+            output = [0, 1];
+        } 
+    
+        else {
+            output = [0, 1];
+            
+                for (var i = 2; i < n; i++) {
+                output.push(output[output.length - 2] + output[output.length - 1]);
+            }
+        }
+        return output;
+    
+    //Do NOT change any of the code below 👇
+    }
+    

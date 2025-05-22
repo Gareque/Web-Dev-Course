@@ -1,0 +1,25 @@
+  .text {
+    text-align: center;
+  }
+
+  .indicators {
+    color: white;
+  }
+
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+  }
+
+  .buttons {
+    margin-right: 0.5em;
+  }
+
+  .disc-btn {
+    background-color: #5865F2;
+  }
+
+  .carousel {
+    height: 600px;
+  }
